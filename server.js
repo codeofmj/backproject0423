@@ -1,5 +1,6 @@
 // Express 불러오기
 const express = require("express");
+const cors = require("cors");
 
 // Express 앱 생성
 const app = express();
@@ -7,6 +8,7 @@ const app = express();
 // board 라우터 불러오기!!
 const boardRouter = require("./routes/board");
 
+app.use(cors());
 // /board 경로로 들어오는 요청을 boardRouter로 넘김
 // 예: /board/list → board.js에서 처리
 app.use("/board", boardRouter);

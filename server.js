@@ -4,7 +4,7 @@ const express = require("express");
 // Express 앱 생성
 const app = express();
 
-// board 라우터 불러오기
+// board 라우터 불러오기!!
 const boardRouter = require("./routes/board");
 
 // /board 경로로 들어오는 요청을 boardRouter로 넘김

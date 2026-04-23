@@ -4,12 +4,13 @@ on:
   push:
     branches: ["main"]
     paths:
-      - "server.js"
-      - "routes/**"
-      - "config/**"
-      - "package.json"
-      - "package-lock.json"
-      - ".github/workflows/deploy_back.yml"
+      - "**"
+      # - "server.js"
+      # - "routes/**"
+      # - "config/**"
+      # - "package.json"
+      # - "package-lock.json"
+      # - ".github/workflows/deploy_back.yml"
   workflow_dispatch:
 
 jobs:
